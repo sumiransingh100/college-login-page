@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+.page{
+    width: 75%;
+    display: flex;
+}
+#input_field{
+    width: 25%;
+}
+#placement_board{
+    display: flex;
+    position: absolute;
+    left: 9vw;
+    top: 4vh;
+    width: 55vw;
+}
+#placement_background{
+    display: flex;
+    filter: opacity(0.7);
+    width: 73vw;
+}
+#background_content{
+    background-color: rgba(3, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    width: 72vw;
+    position: absolute;
+    top: 71vh;
+    padding-left: 14px;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#part_1{
+    justify-content: flex-start;
+}
+#logo{
+    position: relative;
+    left: 90px;
+    top: 33px;
+}
+#input_id_pas{
+    position: relative;
+    top: 55px;
+    left: 24px;
+}
+#user_id{
+    height: 2.2rem;
+    width: 18rem;
+    border: none;
+    box-shadow: 1px 1px 10px red;
+    border-radius: 12px;
+    opacity: 0.7;
+}
+#user_id:hover{
+    opacity: 1;
+}
+#pwd:hover{
+    opacity: 1;
+}
+#pwd{
+    height: 2.2rem;
+    opacity: 0.7;
+    width: 18rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px red;
+    
+}
+#sign_in_me_btn{
+    height: 2.4rem;
+    border-radius: 2px;
+    margin-top: 20px;
+    width: 18rem;
+    border: none;
+    background-color: rgb(50, 119, 193);
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+#sign_in_me_btn:hover{
+    background-color: rgb(38, 92, 150);
+}
+#sign_in_me_btn:active{
+    background-color: rgb(27, 79, 134);
+}
+#forgot_password{
+    cursor: pointer;
+    position: relative;
+    left: 24px;
+    top: 63px;
+    height: 2.4rem;
+    border-radius: 2px;
+    margin-top: 20px;
+    width: 18rem;
+    border: none;
+    background-color: rgb(240, 72, 72);
+    font-size: 15px;
+    color: white;
+}
+#forgot_password:hover{
+    background-color: rgb(194, 53, 53);
+}
+#forgot_password:active{
+    background-color: rgb(137, 31, 31);
+}
+#create_new_user{
+    position: relative;
+    cursor: pointer;
+    left: 24px;
+    top: 63px;
+    height: 2.4rem;
+    border-radius: 2px;
+    margin-top: 10px;
+    width: 18rem;
+    border: none;
+    background-color: rgb(35, 180, 170);
+    font-size: 15px;
+    color: white;
+}
+#create_new_user:hover{
+    background-color: rgb(22, 147, 139);
+}
+#create_new_user:active{
+    background-color: rgb(16, 107, 101);
+}
+#create_parent_login{
+    position: relative;
+    cursor: pointer;
+    left: 24px;
+    top: 63px;
+    height: 2.4rem;
+    border-radius: 2px;
+    margin-top: 10px;
+    width: 18rem;
+    border: none;
+    background-color: rgb(19, 180, 224);
+    font-size: 15px;
+    color: white;
+}
+#create_parent_login:hover{
+    background-color: rgb(19, 144, 179);
+}
+#create_parent_login:active{
+    background-color: rgb(13, 110, 137);
+}
+#desclamer{
+    float: right;
+    font-size: 12px;
+    margin-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+@media (max-width:600px) {
+    body{
+        background-color: rgba(152, 44, 44, 0.1);
+    }
+    #placement_background{
+        display: none;
+    }
+    #placement_board{
+        display: none;
+    }
+    #input_field{
+        position: absolute;
+        left: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #background_content{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 6vh;
+        width: 100%;
+    }
+    #desclamer{
+        display: none;
+    }
+}
